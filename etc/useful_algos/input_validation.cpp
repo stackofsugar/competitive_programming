@@ -8,7 +8,7 @@ void cleanbuf(){
 }
 
 template<typename Ty>
-Ty input(Ty floor = 0, Ty ceil = hardLimit){
+Ty input(Ty floor = 0, Ty ceil = numeric_limits<Ty>::max()){
     Ty buffer;
     while(1){
         if(cin >> buffer){
